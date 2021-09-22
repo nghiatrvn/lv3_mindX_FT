@@ -27,7 +27,6 @@ const write = async (content) => {
 const read = async () => {
   try {
     const data = await fs.promises.read("./fs_CRUD.json", "utf8");
-
     console.log("read data: ", JSON.parse(data));
   } catch (err) {
     throw err;
