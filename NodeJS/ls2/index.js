@@ -7,7 +7,7 @@ http.createServer(function (req, res) {
     //định dang response head trả về
     res.writeHead('200', {'content-type': 'text/html'});
     //đọc file code.html encode utf8
-    fs.readFile('code.html', 'utf8', function (err, data) {
+    fs.readFile('index.html', 'utf8', function (err, data) {
         if (err) throw err;
         // in ra nội dung đọc được
         res.write(data);

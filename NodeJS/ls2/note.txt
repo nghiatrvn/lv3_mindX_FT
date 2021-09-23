@@ -1,0 +1,2 @@
+mySet.has(1) không trả vể giá trị true
+m1.get('a')  không trả vể giá trị tương ứng

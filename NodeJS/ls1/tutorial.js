@@ -1,7 +1,7 @@
 var fs = require('fs');
 const path = require('path');
 
-// student là 1 object có format
+// student là 1 object có forma
 // {
 //     "name": "",
 //     "age": 23,
@@ -36,7 +36,7 @@ const addNew = (student) => {
                 console.log(err);
                 throw err;
             }
-            console.log('THêm mới học sinh thành công');
+            console.log('Thêm mới học sinh thành công');
         });
     })
 }
@@ -56,10 +56,10 @@ const addNewPromise = async student => {
         const newList = [...dataConvert, student];
 
         await fs.promises.writeFile('student.json', JSON.stringify(newList));
-        console.log('THêm mới học sinh thành công');
+        console.log('Thêm mới học sinh thành công');
 
     } catch (err) {
-        console.log('THêm mới học sinh thất bại');
+        console.log('Thêm mới học sinh thất bại');
         throw err;
 
     }
@@ -67,10 +67,10 @@ const addNewPromise = async student => {
 
 const main = () => {
     const newStudent = {
-        "name": "duc",
-        "age": 26,
+        "name": "nghia",
+        "age": 24,
         "gender": "Male",
-        "department": "Math",
+        "department": "OM",
     }
     // sử dụng callback
     // addNew(newStudent)
